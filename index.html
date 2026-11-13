@@ -933,6 +933,19 @@
   .miembro-estado.vencido,.miembro-estado.suspendido{background:#f6dcd8;color:#8e2f23;}
   .miembros-vacio{grid-column:1/-1;text-align:center;color:var(--tinta-suave);padding:30px 0;}
 </style>
+
+<style>
+/* Acceso institucional a PAS ID */
+.pas-id-nav-link{display:inline-flex;align-items:center;gap:9px;flex:0 0 auto;padding:10px 16px;border-radius:999px;background:linear-gradient(135deg,#173653,#24516a);color:#fff!important;font-weight:800;font-size:.84rem;text-decoration:none;box-shadow:0 7px 18px rgba(19,42,72,.14);transition:transform .2s,box-shadow .2s}
+.pas-id-nav-link span{color:#e6bd61}.pas-id-nav-link:hover{transform:translateY(-2px);box-shadow:0 10px 22px rgba(19,42,72,.2)}
+.pas-id-bridge{padding:clamp(34px,5vw,58px) 0;background:linear-gradient(115deg,#112b49,#1c4960);color:#fff;position:relative;overflow:hidden}
+.pas-id-bridge:after{content:"";position:absolute;width:360px;height:360px;border:1px solid rgba(255,255,255,.1);border-radius:50%;right:-100px;top:-210px;box-shadow:0 0 0 35px rgba(255,255,255,.025),0 0 0 75px rgba(255,255,255,.02);pointer-events:none}
+.pas-id-bridge-inner{display:flex;align-items:center;justify-content:space-between;gap:30px;position:relative;z-index:1}
+.pas-id-bridge-copy{max-width:650px}.pas-id-bridge .eyebrow{color:#e6bd61;font-weight:800;letter-spacing:.14em;font-size:.72rem}.pas-id-bridge h2{font-size:clamp(1.65rem,3vw,2.4rem);line-height:1.12;margin:10px 0;color:#fff}.pas-id-bridge p{max-width:590px;color:rgba(255,255,255,.76);line-height:1.7;margin:0;font-size:.96rem}
+.pas-id-bridge-actions{display:flex;flex-direction:column;gap:11px;min-width:220px}.pas-id-primary,.pas-id-secondary{display:flex;align-items:center;justify-content:center;gap:12px;padding:13px 18px;border-radius:9px;text-decoration:none;font-weight:800;font-size:.88rem;transition:transform .2s}.pas-id-primary{background:#e2b34e;color:#152c47!important;box-shadow:0 8px 18px rgba(0,0,0,.16)}.pas-id-secondary{border:1px solid rgba(255,255,255,.35);color:#fff!important;background:rgba(255,255,255,.06)}.pas-id-primary:hover,.pas-id-secondary:hover{transform:translateY(-2px)}
+@media(max-width:880px){.pas-id-bridge-inner{align-items:flex-start;flex-direction:column}.pas-id-bridge-actions{width:100%;max-width:360px}.pas-id-nav-link{padding:8px 12px;font-size:.76rem}}
+@media(max-width:480px){.pas-id-nav-link{padding:8px 10px;font-size:.7rem}.pas-id-bridge{padding:34px 0}.pas-id-bridge p{font-size:.88rem}}
+</style>
 </head>
 <body>
 
@@ -964,6 +977,7 @@
         <li><a href="#articulos">Artículos</a></li>
         <li><a href="#contacto">Contacto</a></li>
       </ul>
+      <a class="pas-id-nav-link" href="https://psicologosasociadosdelsoconusco.github.io/PAS-ID/" target="_blank" rel="noopener" aria-label="Abrir PAS ID, plataforma de credenciales y membresía">PAS ID <span>↗</span></a>
     </nav>
   </div>
 </header>
@@ -1244,6 +1258,20 @@
       <p class="articulos-note">Nuevos artículos se irán incorporando a esta sección.</p>
     </div>
   </section>
+
+<section class="pas-id-bridge" aria-labelledby="pas-id-bridge-title">
+  <div class="wrap pas-id-bridge-inner">
+    <div class="pas-id-bridge-copy">
+      <span class="eyebrow">IDENTIDAD DIGITAL PAS</span>
+      <h2 id="pas-id-bridge-title">Tu comunidad, también en digital.</h2>
+      <p>Accede a PAS ID para consultar y verificar credenciales institucionales o ingresar a tu espacio de gestión.</p>
+    </div>
+    <div class="pas-id-bridge-actions">
+      <a class="pas-id-primary" href="https://psicologosasociadosdelsoconusco.github.io/PAS-ID/" target="_blank" rel="noopener">Ingresar a PAS ID <span>↗</span></a>
+      <a class="pas-id-secondary" href="https://psicologosasociadosdelsoconusco.github.io/PAS-ID/" target="_blank" rel="noopener">Verificar una credencial</a>
+    </div>
+  </div>
+</section>
 
 <section id="por-que-pas" class="porque-band">
     <div class="wrap porque-grid">
